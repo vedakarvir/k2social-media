@@ -1,17 +1,18 @@
 /* Navbar */
-
+body{
+	margin: auto;
+}
+}
 .navbar {
   background-color: #ffffff;
   overflow: hidden;
-  position: fixed;
+  position: relative;
   top: 0;
   z-index: 1000;
   width: 100%;
   border-bottom: 1px solid #e6e6e6;
 }
-
-#option,
-#co-name{
+#option1{
   float: left;
   display: block;
   color: #000000;
@@ -20,8 +21,31 @@
   text-decoration: none;
   font-family: 'Roboto', sans-serif;
   font-size: 18px;
+  margin-top:28px;
+}
+#option,
+#co-name{
+  float: left;
+  display: block;
+  color: #000000;
+  text-align: center;
+ /* padding: 14px 16px;*/
+  text-decoration: none;
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+}
+.txtfooterbtm {
+	
+	color: #e6e6e6;
+}
+.txtfooterbtm a:-webkit-any-link{
+	text-decoration:none !important;
+	color: #e6e6e6;
 }
 
+.txtfooterbtm a:-webkit-any-link:hover{
+	text-decoration:underline !important;
+}
 #option:hover{
   background-color: #ddd;
   color: black;
@@ -33,7 +57,10 @@
   color: #006600;
   transition: 0.5s;
 }
-
+#form{
+	
+	text-align:left;
+}
 .menu,
 #dropdown,
 .dropdown-option,
@@ -45,27 +72,73 @@
 #ddown-menu{
   font-size: 28px;
 }
-
-@media screen and (max-width: 1280px) {
-  #option,
-  #co-name{
+/*Cookie Consent Begin*/
+#cookieConsent {
+    background-color: rgba(20,20,20,0.8);
+    min-height: 26px;
     font-size: 14px;
-  }
+    color: #ccc;
+    line-height: 26px;
+    padding: 10px 0px 10px 30px;
+    font-family: "Trebuchet MS",Helvetica,sans-serif;
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: none;
+    z-index: 9999;
+	text-align: center;
 }
-
-@media screen and (max-width: 1060px) {
+#cookieConsent a {
+    color: #4B8EE7;
+    text-decoration: none;
+}
+#closeCookieConsent {
+    float: right;
+    display: inline-block;
+    cursor: pointer;
+    height: 20px;
+    width: 20px;
+    margin: 0px 10px 0px 10px;
+    font-weight: bold;
+}
+#closeCookieConsent:hover {
+    color: #FFF;
+}
+#cookieConsent a.cookieConsentOK {
+    background-color: #F1D600;
+    color: #000;
+    display: inline-block;
+    border-radius: 5px;
+    padding: 0 20px;
+    cursor: pointer;
+    float: right;
+    margin: 0 60px 0 10px;
+}
+#cookieConsent a.cookieConsentOK:hover {
+    background-color: #E0C91F;
+}
+/*Cookie Consent End*/
+@media screen and (max-width: 1365px) {
+  .header{
+  width: 100%;
+  margin: 0;
+  margin-top: 0px;
+  position: relative;
+  text-align: center;
+}
   #dropdown{
     display: block;
     float: right;
     height: 100%;
     background-color: #ffffff;
     border-style: none;
-    margin-right: 18px;
-    margin-top: 10px;
+    margin-right: 25px;
+    margin-top: 35px;
     outline: none;
     cursor: pointer;
   }
-  #option{
+  #option, #option1{
     display: none;
   }
   .dropdown-option,
@@ -86,7 +159,7 @@
   }
   .menu{
     display: none;
-    margin-top: 45px;
+    margin-top: 83px;
     text-decoration: none;
     font-family: 'Roboto', sans-serif;
     font-size: 17px;
@@ -95,7 +168,67 @@
   #co-name{
     text-align: left;
     z-index: 1000;
+	padding:0px 16px !important;
   }
+  .navbar{
+	  position:relative !important;
+	  }
+}
+}
+@media screen and (max-width: 1280px) {
+  #option,
+  #co-name{
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 1060px) {
+  #dropdown{
+    display: block;
+    float: right;
+    height: 100%;
+    background-color: #ffffff;
+    border-style: none;
+    margin-right: 25px;
+    margin-top: 35px;
+    outline: none;
+    cursor: pointer;
+  }
+  #option, #option1{
+    display: none;
+  }
+  .dropdown-option,
+  #do1,#do2,#do3,#do4,#do5,#do6,#do7,#do8{
+    width: 100%;
+    box-sizing: border-box;
+    display: block;
+    padding: 14px 0px;
+    text-decoration: none;
+    text-align: center;
+    color: #000000;
+    border-top: 1px solid #e6e6e6;
+  }
+  .dropdown-option:hover{
+    background-color: #e6e6e6;
+    color: black;
+    transition: 0.5s;
+  }
+  .menu{
+    display: none;
+    margin-top: 83px;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    font-size: 17px;
+    z-index: 0;
+  }
+  #co-name{
+    text-align: left;
+    z-index: 1000;
+	padding:0px 16px !important;
+  }
+  .navbar{
+	  position:relative !important;
+	  }
 }
 
 @media only screen 
@@ -129,7 +262,7 @@
 .header{
   width: 100%;
   margin: 0;
-  margin-top: 45px;
+  margin-top: 70px;
   position: relative;
   text-align: center;
 }
@@ -322,9 +455,9 @@
   .container{
     margin-bottom: 60px;    
   }
-  .header{
+  /*.header{
     margin-top: 132px;
-  }
+  }*/
   .intro-text{
     font-size: 52px;
   }
@@ -400,15 +533,15 @@
   display: inline-block;
   vertical-align: top;
   margin: 15px;
-  border: 4px solid #009900;
-  background-color: #009900;
+  border: 4px solid #1c476a;
+  background-color: #1c476a;
   border-radius: 5%;
   padding: 0;
   box-shadow: 3px 3px 8px #888888;
 }
 
 .packages-header{
-  background-image: linear-gradient(to bottom, #009900, #006600);
+  background-image: linear-gradient(to bottom, #1c476a, #1c476a);
   width: 100%;
   height: 200px;
   margin: 0;
@@ -434,13 +567,13 @@
 }
 
 #find-out{
-  background-image: linear-gradient(to bottom, #009900, #006600);
+  background-image: linear-gradient(to bottom, #1c476a, #1c476a);
   color: #ffffff;
-  border: 1px solid #009900;
-  border-radius: 10%;
+  border: 1px solid #1c476a;
+  border-radius: 5px;
   font-family: 'Roboto', sans-serif;
   font-size: 20px;
-  padding: 10px;
+  padding: 10px 20px;
   box-shadow: 3px 3px 8px #888888;
   position: absolute;
   bottom: 15px;
@@ -459,27 +592,31 @@
   and (max-device-width: 812px) 
   and (-webkit-min-device-pixel-ratio: 2){
   .packages{
-    background-color: #009900;
+    background-color: #1c476a;
     max-width: 80%;
     margin: 60px;
-    border: 16px solid #009900;
+    border: 16px solid #1c476a;
     box-shadow: 12px 12px 32px #888888;
   }
   .packages-header{
-    background-image: linear-gradient(to bottom, #009900, #009900);
+    background-image: linear-gradient(to bottom, #1c476a, #1c476a);
   }
   .info-box{
     height: auto;
     padding: 40px;
   }
+  .info-box ul{
+	  padding-bottom: 25px;
+	  
+  }
   #find-out{
-    font-size: 60px;
+	  font-size: 60px;
     box-shadow: 12px 12px 32px #888888;
-    position: relative;
-    padding: 30px;
+    position: initial;
+    padding: 20px;
     margin-top: 40px;
     margin-left: 30px;
-    margin-right: 190px;
+    margin-right: 60px;
     width: 70%;
   }
   .services-text-bullet{
@@ -498,21 +635,22 @@
 
 /* Pod page */
 
-#sign-up-btn{
-  background-color: #009900;
-  color: #ffffff;
-  border: 1px solid #009900;
-  border-radius: 10%;
-  font-family: 'Roboto', sans-serif;
-  font-size: 24px;
-  padding: 15px;
-  margin: 5px;
-  box-shadow: 3px 3px 8px #888888;
-  text-decoration: none;
+#sign-up-btn {
+    background-color: #1c476a;
+    color: #ffffff;
+    border: 1px solid #1c476a;
+    border-radius: 5px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    padding: 10px 20px;
+    font-weight: 400;
+    margin: 5px;
+    box-shadow: 3px 3px 8px #888888;
+    text-decoration: none;
 }
 
 #sign-up-btn:hover{
-  background-image: linear-gradient(to bottom, #009900, #006600);
+  background-image: linear-gradient(to bottom, #1c476a, #1c476a);
   transition: 0.9s;
   cursor: pointer;
 }
@@ -555,7 +693,7 @@
   and (max-device-width: 812px) 
   and (-webkit-min-device-pixel-ratio: 2){
   #sign-up-btn{
-    background-image: linear-gradient(to bottom, #009900, #006600);
+    background-image: linear-gradient(to bottom, #1c476a, #006600);
     font-size: 58px;
     padding: 40px;
     margin: 120px;
@@ -586,7 +724,13 @@
   padding: 20px;
   display: none;
 }
-
+#expand-q::after{
+	
+	
+}
+/*.fa-plus:after {
+    content: "\f068" !important;
+} */
 #expand-q{
   font-size: 14px;
   margin-left: 5px;
@@ -629,7 +773,7 @@
   display: inline-block;
   margin: 0px;
   padding: 50px;
-  background-image: url("img/comments.JPG");
+  background-image: url("images/comments.JPG");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -670,7 +814,7 @@
     height: 390px;
   }
   .test3{
-    background-image: url("img/comments.JPG");
+    background-image: url("images/comments.JPG");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -716,7 +860,7 @@
     height: 1100px;
   }
   .test3{
-    background-image: url("img/comments.JPG");
+    background-image: url("images/comments.JPG");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;

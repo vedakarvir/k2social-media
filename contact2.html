@@ -2,6 +2,7 @@
 <!DOCTYPE html>
 <html>
     <head>
+	
         <meta charset="utf-8">
         <title>Pod</title>
         
@@ -16,7 +17,7 @@
     </head>
     <body>
 	<div id="cookieConsent">
-		<div id="closeCookieConsent">x</div>
+    <div id="closeCookieConsent">x</div>
     This website is using cookies. <a href="cookiepolicy.html" target="_blank">More info</a>
 </div>
        <div class="navbar" id="navbar">
@@ -36,7 +37,7 @@
             
               <a href="courses.html" class="dropdown-option" id="do2">LinkedIn Courses</a>
               <a href="packages.html" class="dropdown-option" id="do3">LinkedIn Packages</a>
-              <a href="pod.html" class="dropdown-option" id="do4">LinkedIn Pod</a>
+              <a href="#" class="dropdown-option" id="do4">LinkedIn Pod</a>
               <a href="services.html" class="dropdown-option" id="do8">Social Media Services</a>
               <a href="affiliate.html" class="dropdown-option" id="do5">Promoted Events</a>
               <a href="faqs.html" class="dropdown-option" id="do6">FAQs</a>
@@ -46,40 +47,68 @@
         <div class="header">
             <img src="images/pod.jpeg" style="width:100%;height:auto;">
             <div class="header-container">
-                <h1 class="header-text">The LinkedIn Pod</h1>
+                <h1 class="header-text">Contact Us</h1>
             </div>
         </div>
         <div class="container">
-            <div class="intro">
-                <p class="services-text">The LinkedIn pod is an online community of professionals who want to grow their business on LinkedIn. As a member of 
-                the pod, you are guaranteed to get traction on your posts because all members support each other. It is the perfect place for increasing engagement with your audience and growing your 
-                LinkedIn account.</p>
-            </div>
-            <br>
-            <div class="benefits">
-                <br>
-                <p class="services-text">As a member of the Pod, you will receive:</p>
-                <p class="services-text"><i>Tips on engagement</i></p>
-                <p class="services-text"><i>Increased exposure on LinkedIn</i></p>
-                <p class="services-text"><i>An increase in sales</i></p>
-                <p class="services-text"><i>Full support in a chat group</i></p>
-                <p class="services-text"><i>Access 7 days a week</i></p>
-                <p class="services-text"><i>Option to become a member of the booster group</i></p>
-                <br>
-            </div>
-            <br>
-            <div class="intro">
-                <p class="services-text">The LinkedIn Pod operates via Whatsapp, which means you can engage with members whenever and wherever you like.</p>
-                <p class="services-text">Membership is only £15 per month (no contract).</p>
-                <p class="services-text">For almost immediate growth of your LinkedIn account, sign up with PayPal on the link below.</p>
-                <br>
-            </div>
-            <a href="#" id="sign-up-btn" target="_blank">Sign up</a>
+
+                    
+					<div id="mainform">
+								<form id="form">
+                    	<p id="returnmessage"></p>
+                        <label for="name" class="nameLabel">Name <span>*</span></label>
+                          <input id="name" type="text" name="name" placeholder="Enter your name..." style="background-image: url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABHklEQVQ4EaVTO26DQBD1ohQWaS2lg9JybZ+AK7hNwx2oIoVf4UPQ0Lj1FdKktevIpel8AKNUkDcWMxpgSaIEaTVv3sx7uztiTdu2s/98DywOw3Dued4Who/M2aIx5lZV1aEsy0+qiwHELyi+Ytl0PQ69SxAxkWIA4RMRTdNsKE59juMcuZd6xIAFeZ6fGCdJ8kY4y7KAuTRNGd7jyEBXsdOPE3a0QGPsniOnnYMO67LgSQN9T41F2QGrQRRFCwyzoIF2qyBuKKbcOgPXdVeY9rMWgNsjf9ccYesJhk3f5dYT1HX9gR0LLQR30TnjkUEcx2uIuS4RnI+aj6sJR0AM8AaumPaM/rRehyWhXqbFAA9kh3/8/NvHxAYGAsZ/il8IalkCLBfNVAAAAABJRU5ErkJggg==&quot;); background-repeat: no-repeat; background-attachment: scroll; background-size: 16px 18px; background-position: 98% 50%; cursor: auto;  margin-left: 93px;"><br>
+						 <br> 
+					   <label for="subject">Company Name</label>
+                          <input id="subject" type="text" name="subject" placeholder="Enter Company Name" style="margin-left: 38px;"><br>
+						  <br>
+						<label for="email" class="emailLabel">Email <span>*</span></label>
+                          <input id="email" type="text" name="email" placeholder="Enter your email..." style="margin-left: 93px;"><br>
+						  <br>
+                        <label for="contact" class="emailLabel">Contact No: <span>*</span></label>
+							<input type="text" id="contact" placeholder="10 digit Mobile no." style="
+    margin-left: 53px;"><br>
+                        <br>
+                       
+                        <button id="submit" value="Send Message">Send Message</button>
+                    </form>
+						</div>		
             <button id="scrollTop"><i class="fa fa-arrow-up" aria-hidden="true"></i></button>
         </div>
         <br>
         <footer class="foot">
             <p class="foot-text">© Copyright K2SocialMedia | All Rights Reserved.</p><span class="txtfooterbtm foot-text"><a href="privacy.html" style="color: #e6e6e6;">Privacy Policy</a> | <a href="#"  style="color: #e6e6e6;">Terms &amp; Conditions</a> </span>
         </footer>
+		<script src="contact_form.js"></script>
     </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

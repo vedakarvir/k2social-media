@@ -1,34 +1,38 @@
-
 <!DOCTYPE html>
 <html>
     <head>
         <meta charset="utf-8">
         <title>Home</title>
         
-        <link rel="stylesheet" type="text/css" href="static/styles.css">
+        <link rel="stylesheet" type="text/css" href="styles.css">
         <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Fira+Sans+Extra+Condensed|Archivo+Narrow|Chivo&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css' integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous'>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
-        <script type="text/javascript" src="static/functions.js"></script>
+        <script type="text/javascript" src="functions.js"></script>
+		
     </head>
     <body>
+	<div id="cookieConsent">
+		 <div id="closeCookieConsent">x</div>
+    This website is using cookies. <a href="cookiepolicy.html" target="_blank">More info</a>
+</div>
         <div class="navbar" id="navbar">
-          <a href="#" id="co-name"><b>K2SM</b></a>
-          <a href="#" id="option">Home</a>
-          <a href="courses.html" id="option">LinkedIn Courses</a>
-          <a href="packages.html" id="option">LinkedIn Packages</a>
-          <a href="pod.html" id="option">LinkedIn Pod</a>
-          <a href="services.html" id="option">Social Media Services</a>
-          <a href="affiliate.html" id="option">Promoted Events</a>
-          <a href="faqs.html" id="option">FAQs</a>
-          <a href="testimonials.html" id="option">Testimonials</a>
+           <a href="index.html" id="co-name"><img id="logo-img" src="images\Black logo - no background.png" /></a>
+          
+          <a href="courses.html" id="option1">LinkedIn Courses</a>
+          <a href="packages.html" id="option1">LinkedIn Packages</a>
+          <a href="pod.html" id="option1">LinkedIn Pod</a>
+          <a href="services.html" id="option1">Social Media Services</a>
+          <a href="affiliate.html" id="option1">Promoted Events</a>
+          <a href="faqs.html" id="option1">FAQs</a>
+          <a href="testimonials.html" id="option1">Testimonials</a>
           <button type="button" id="dropdown">
               <i class="fa fa-bars" id="ddown-menu"></i>
           </button>
           <div class="menu">
-              <a href="#" class="dropdown-option" id="do1">Home</a>
+             
               <a href="courses.html" class="dropdown-option" id="do2">LinkedIn Courses</a>
               <a href="packages.html" class="dropdown-option" id="do3">LinkedIn Packages</a>
               <a href="pod.html" class="dropdown-option" id="do4">LinkedIn Pod</a>
@@ -39,7 +43,7 @@
           </div>
         </div>
         <div class="header">
-            <img src="static/img/businesswoman-laptop.JPG" style="width:100%;height:auto;">
+            <img src="images/businesswoman-laptop.JPG" style="width:100%;height:auto;">
             <div class="header-container">
                 <h1 class="header-text"><b>K2SocialMedia</b></h1>
                 <h4 class="subhead-text">TAKING YOUR SOCIAL MEDIA TO NEW HEIGHTS</h4>
@@ -85,12 +89,18 @@
                 <div class="info-3">
                     <p class="services-text">Get in touch to find out more about our training courses. They are designed to enable you to optimise your account to help you  
                     generate leads in a very short space of time. The courses are tailor made to your needs and can be delivered one-to-one or to an entire team of people.</p>
+					
                 </div>
             </div>
+			 <hr>
+			<div class="intro">
+                <p class="intro-text">We make a variety of video content that is in line with your brand and campaign objectives.  This includes explainer videos, moving images and long form videos.</p>
+            </div>
+           
             <button id="scrollTop"><i class="fa fa-arrow-up" aria-hidden="true"></i></button>
         </div>
-        <footer class="foot">
-            <p class="foot-text">© Copyright K2SocialMedia | All Rights Reserved.</p>
+                <footer class="foot">
+            <p class="foot-text">© Copyright K2SocialMedia | All Rights Reserved.</p><span class="txtfooterbtm foot-text"><a href="privacy.html" style="color: #e6e6e6;">Privacy Policy</a> | <a href="#"  style="color: #e6e6e6;">Terms &amp; Conditions</a> </span>
         </footer>
     </body>
 </html>
