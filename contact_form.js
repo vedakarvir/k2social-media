@@ -2,9 +2,8 @@ $(document).ready(function() {
 $("#submit").click(function() {
 var name = $("#name").val();
 var email = $("#email").val();
-
 var contact = $("#contact").val();
-var dance_form = $("#subject").val();
+var company_name = $("#subject").val();
 $("#returnmessage").empty(); // To empty previous error/success message.
 // Checking for blank fields.
 if (name == '' || email == '' || contact == '') {
@@ -14,9 +13,8 @@ alert("Please Fill Required Fields");
 $.post("contact_form.php", {
 name1: name,
 email1: email,
-
 contact1: contact,
-dance_form1: dance_form
+company_name1: company_name
 }, function(data) {
 $("#returnmessage").append(data); // Append returned message to message paragraph.
 if (data == "Your Query has been received, We will contact you soon.") {
