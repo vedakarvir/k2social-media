@@ -2,13 +2,12 @@
 body{
 	margin: auto;
 }
-}
 .navbar {
   background-color: #ffffff;
   overflow: hidden;
   position: relative;
   top: 0;
-  z-index: 1000;
+  z-index: 99999;
   width: 100%;
   border-bottom: 1px solid #e6e6e6;
 }
@@ -262,7 +261,7 @@ body{
 .header{
   width: 100%;
   margin: 0;
-  margin-top: 70px;
+/*  margin-top: 70px; */
   position: relative;
   text-align: center;
 }
