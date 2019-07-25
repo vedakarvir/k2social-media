@@ -6,7 +6,7 @@ $contact = $_POST['contact1'];
 $company_name = $_POST['company_name1'];
 $email = filter_var($email, FILTER_SANITIZE_EMAIL); // Sanitizing E-mail.
 
-//$tekzone_email = "veda@tekzoneweb.com";
+$tekzone_email = "veda@tekzoneweb.com";
 
 // After sanitization Validation is performed
 if (filter_var($email, FILTER_VALIDATE_EMAIL)) {
@@ -19,7 +19,7 @@ $headers = 'MIME-Version: 1.0' . "\r\n";
 $headers .= 'Content-type: text/html; charset=iso-8859-1' . "\r\n";
 $headers .= 'From:' . $email. "\r\n"; // Sender's Email
 $headers .= 'Cc:' . $email. "\r\n"; // Carbon copy to Sender
-//$headers .= 'Bcc:' . $tekzone_email . "\r\n"; // Blank carbon copy to support 
+$headers .= 'Bcc:' . $tekzone_email . "\r\n"; // Blank carbon copy to support 
 $template = '<div style="padding:50px; color:white;">Hello ' . $name . ',<br/>'
 . '<br/>Thank you...! For Contacting Us.<br/><br/>'
 . 'Name:' . $name . '<br/>'
