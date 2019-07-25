@@ -4,6 +4,7 @@ $(document).ready(function(){
     
     $("#dropdown").click(function(){
         $(this).next("div").slideToggle(300);
+	    /*
         $("#do1").hide().fadeIn(1500);
         $("#do2").hide().fadeIn(1600);
         $("#do3").hide().fadeIn(1700);
@@ -12,6 +13,7 @@ $(document).ready(function(){
         $("#do5").hide().fadeIn(2000);
         $("#do6").hide().fadeIn(2100);
         $("#do7").hide().fadeIn(2200);
+	     */
     });
     
     /* Home page expand service descriptions */
