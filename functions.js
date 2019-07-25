@@ -3,7 +3,7 @@ $(document).ready(function(){
     /* Navbar dropdown menu */
     
     $("#dropdown").click(function(){
-        $(this).next("div").slideToggle(300);
+        $(this).next("div").toggle(300);
 	    /*
         $("#do1").hide().fadeIn(1500);
         $("#do2").hide().fadeIn(1600);
