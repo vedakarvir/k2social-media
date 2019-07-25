@@ -3,7 +3,7 @@
 $name = $_POST['name1'];
 $email = $_POST['email1'];
 $contact = $_POST['contact1'];
-$dance_form = $_POST['dance_form1'];
+$company_name = $_POST['company_name1'];
 $email = filter_var($email, FILTER_SANITIZE_EMAIL); // Sanitizing E-mail.
 
 //$tekzone_email = "veda@tekzoneweb.com";
@@ -25,7 +25,7 @@ $template = '<div style="padding:50px; color:white;">Hello ' . $name . ',<br/>'
 . 'Name:' . $name . '<br/>'
 . 'Email:' . $email . '<br/>'
 . 'Contact No:' . $contact . '<br/>'
-. 'Dance Form:' . $dance_form . '<br/>''<br/>'
+. 'Dance Form:' . $company_name . '<br/>''<br/>'
 . 'This is a Contact Confirmation mail.'
 . '<br/>'
 . 'We Will contact You as soon as possible .</div>';
@@ -33,7 +33,7 @@ $sendmessage = "<div style=\"background-color:#7E7E7E; color:white;\">" . $templ
 // Message lines should not exceed 70 characters (PHP rule), so wrap it.
 $sendmessage = wordwrap($sendmessage, 70);
 // Send mail by PHP Mail Function.
-mail("sunitamahajan.521@gmail.com", $subject, $sendmessage, $headers);
+mail("veda@tekzoneweb.com", $subject, $sendmessage, $headers);
 echo "Your Query has been received, We will contact you soon.";
 }
 } else {
