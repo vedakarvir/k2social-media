@@ -25,7 +25,7 @@ $template = '<div style="padding:50px; color:white;">Hello ' . $name . ',<br/>'
 . 'Name:' . $name . '<br/>'
 . 'Email:' . $email . '<br/>'
 . 'Contact No:' . $contact . '<br/>'
-. 'Dance Form:' . $company_name . '<br/>''<br/>'
+. 'company_name:' . $company_name . '<br/>''<br/>'
 . 'This is a Contact Confirmation mail.'
 . '<br/>'
 . 'We Will contact You as soon as possible .</div>';
