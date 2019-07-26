@@ -17,7 +17,7 @@ contact1: contact,
 company_name1: company_name
 }, function(data) {
  alert (data);
-$("#returnmessage").append(data); // Append returned message to message paragraph.
+$("#returnmessage").innerHTML(data); // Append returned message to message paragraph.
 if (data == "Your Query has been received, We will contact you soon.") {
 $("#form")[0].reset(); // To reset form fields on success.
 }
